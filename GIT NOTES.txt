@@ -52,3 +52,7 @@ git log - showa all commits history that is done.
 git reset --hard commit_code   - undos all the changes in code to the as per the commit number
 
 git merge other_branch_name -- means git merge current branch with the other_branch_name
+
+git clone - makes/creates the repo locally that already exist in github
+
+forking from github - creates a copy of repo that is available in web as repo in our account
