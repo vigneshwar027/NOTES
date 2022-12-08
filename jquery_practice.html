@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.6.1.js"></script>
+</head>
+<body>
+    <!-- <script>
+        console.log($)
+    </script> -->
+
+    Enter the Capital of India:
+    <input type="text" name="" id="answer">
+    <button type="submit">Submit </button>
+    <br>
+    <p></p>
+
+    <a href="_blank" class="vicfdfky fsdfds" >test link</a>
+    <a href="fds" id = 'a2' class="vicky fds">test link</a>
+
+    <div id= "replica"></div>
+
+    <ul id = 'foreach'>
+        <li>number1</li>
+        <li id = 'las' class="mid">
+            <ul>
+                <li class="sub">dfsd</li>
+                <li>ssss</li>
+            </ul></li>
+        <li class="mid">number3</li>
+        <li>number4</li>
+    </ul>
+    <script>
+
+        // $('li').eq(2).css("color","red") //u can do 
+        $('li').has('.sub').css('color','pink')
+        var list = [2,4,5,8]
+        // $.each(list,function(index,val){
+        //     console.log(index,val)
+        // })
+        
+
+        $(list).each(function(index,element){
+            console.log(this)
+        })
+        // var list = [2,4,4,5,'fds']
+
+        // $.each(list, function(index,item){
+        //     console.log(index,this) 
+        // })
+
+                
+        // $('li').each(function(index,element){
+        //     console.log(index,$(element).text())
+        // })
+
+        console.log($('a[href]').attr('href'))
+        // $('a[href]').attr('href','_self') 
+        
+       
+    </script>
+
+    <script>
+
+        console.log($('a').hasClass('vicky'))
+
+
+        $('button').click(function(){
+        
+        $('a     ').clone().insertAfter($('#replica'))
+
+
+        // $('a[href], #a2').removeAttr('href').removeAttr('class')
+
+        $('a[href]').addClass('adedclass')
+
+
+        if ($('#answer').val() == 'Delhi'){
+            $('p').text('The answer is correct')
+        }
+        else if($('#answer').val() == ''){
+            
+            $('p').html('<span style = "color:red">Enter something</span>')
+        }
+        else{
+            
+            $('p').text('The answer is wrong')  
+        }
+        
+        })
+       
+
+
+    </script>
+</body>
+</html>

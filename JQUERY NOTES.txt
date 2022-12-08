@@ -1,1 +1,102 @@
 JQUERY NOTES:
+
+set and get text
+
+$('#idname , .classname') -  selects the doms that has this id and dom that has this classname
+this dont act like a filter.. it helps to choose mul dom at a same time
+
+$('#idname > .classname') - selects the dom with this this classname thats placed inside this id name
+
+$('#idname').text() - gets the text
+$('#idname').text('new text') - sets the text
+
+
+
+
+changing the attribute
+
+$('#idname').attr('href','yahoo.com')
+
+$('a[href]') - refers a tags that has a attr href in it
+
+$('a[href]').attr('href') - gets the attribute
+
+$('a[href]').attr('href','utube') - sets the attribute
+
+note: when u give 1 arg u get the value,
+      when u give 2 arg u set the value,
+
+      when a get text , it gives the 1st matching dom
+      but when a set text , it sets to all matching dom
+
+
+the above can also be written as $('a').attr('href').attr('href','utube')
+this is confusing just use this to understand others code
+
+
+other attribute methods:
+
+removeAttr(name_of_attr) 
+addClass(classname) - to all matching dom 
+hasClass(classname) - if any one matching dom has then it returns true
+removeClass(classname) - removes class of all matching dom and takes no args
+toggleClass(classname) - adds or removes class
+
+
+.clone() - create a copy of element
+.clone() - create a copy of element along with the event handlings attached with it
+
+
+for each in JQUERY
+
+u can interate for a list or also for a list of dom available.
+
+var list = [2,4,4,5,5]
+
+$(list).each(function(index,item){
+    console.log(index,element) or console.log(index,this) 
+    
+})
+    
+    note:this and element means same when it is iterating doms while it differs when it iterates a list or array
+
+
+JQUERY filters:
+
+.eq() - is used to select a element at a particular index from a list of matched elements
+
+eg: 
+<ul id = 'foreach'>
+    <li>number1</li>
+    <li >number2</li>
+    <li>number3</li>
+    <li>number4</li>
+</ul>
+
+
+$('li').eq(2) - choooses the 3rd li element 
+//u can do reverse indexing also as in python
+
+
+.has()
+
+any selector that has a specified selector as it sub-ordinate or any further too
+
+eg:
+
+<ul id = 'foreach'>
+    <li>number1</li>
+    <li id = 'las' class="mid">
+        <ul>
+            <li class="sub">dfsd</li>
+            <li>ssss</li>
+        </ul></li>
+    <li class="mid">number3</li>
+    <li>number4</li>
+</ul>
+
+$(li).has(.sub) - will choose the li that has .mid class "ANYWHERE" inside it.
+
+if u wanna rephrase with > the it's tedious
+
+$('li > ul > .mid') to choose the same

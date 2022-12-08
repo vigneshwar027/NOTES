@@ -1,0 +1,18 @@
+
+
+1) .val is a function hence u should call as .val() and not as .val
+
+2 while using .html() the outer should have single quote and the style tag should havw double quote
+
+6. .css() has no outer brackets like .html()
+
+3. $() the dom should be placed within quotes
+
+4.  unlike python when u write if or else conditions in js
+u have 2 put the cond within a brackets
+
+5. in js true and false keywords dont start with caps lie python
+
+6. multiple dom in a $() dont need individual quotes
+
+7. .css uses , as separator and not : 
