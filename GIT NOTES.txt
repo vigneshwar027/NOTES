@@ -1,0 +1,18 @@
+GIT NOTES:
+
+
+git init -  to open git repo locally
+
+git add . add all files to stage
+
+git add folder1/file1 add a specific file
+
+git commit -m "the message for the commit" -m "additional info or description for the commit"
+
+git push remote add origin "link of the repo"
+
+git push - pushes to the default origin
+
+
+
+git push 
