@@ -78,6 +78,15 @@ $('li').eq(2) - choooses the 3rd li element
 //u can do reverse indexing also as in python
 
 
+.filter()
+
+$('li').filter('.classname') - chooses those that has thid id and this classname
+
+the opposite of this is .not() 
+
+$('li').not('.classname') - chooses those that has this id and not this classname
+
+
 .has()
 
 any selector that has a specified selector as it sub-ordinate or any further too
@@ -100,3 +109,5 @@ $(li).has(.sub) - will choose the li that has .mid class "ANYWHERE" inside it.
 if u wanna rephrase with > the it's tedious
 
 $('li > ul > .mid') to choose the same
+
+note: an object in js is equivalent to dictionary in python.
