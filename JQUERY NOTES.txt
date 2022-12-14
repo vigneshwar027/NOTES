@@ -125,6 +125,21 @@ $('li > ul > .mid') to choose the same
 note: an object in js is equivalent to dictionary in python.
 
 
+.is()
+
+the above function is very useful to check if a dom has any other properties within it
+
+this behaves just like has function but it checks condition on its own dom and not in it's children dom.
+
+eg:  
+    <button id = "show" class = "test_class">show</button>
+
+    $('#show').is('.test_class')  - returns true
+    $('#show').is('.test_class2')  - returns false
+
+similarly:
+    $('.test_class').is('#show') - returns true
+
 calling input type is different from other doms
 
 to get status:
@@ -169,3 +184,15 @@ where key is the event and value is the function
 .event() - gives all details abt the event
 
 
+IMPORTANT NOTE:
+
+when u call a function u add  () to it , but when u refer a function as argument, that is as a call back function u dont use ()
+
+eg:
+
+    $('some dom').on('click',some_func){
+
+    }
+
+    but while calling outside it is 
+    some_func();

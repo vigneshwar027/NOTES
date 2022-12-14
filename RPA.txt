@@ -1,0 +1,61 @@
+1 pdd process design document
+
+spliting a rpa
+dispatcher
+performer
+reporter
+
+
+covert.to.string
+.Tostring
+
+
+list sum
+
+docs.uipath.com for document
+
+ffloor n ceiling in num 
+
+
+APP INTEGRETION- U NEED A APP IN CLIENT MACHINE
+
+
+SYSTEM ACTICICTY- U DONT NEED A APP IN CLIENT MACHINE
+ONLY XLS N XLSX CAN BE DONE
+
+PATH.GET.EXTENSION
+
+EXIST
+
+
+READ 
+cell
+column
+row
+range
+
+open appliccstion
+
+continure on error
+timeout 
+wait for easfy
+delay b4 n de;ay after
+private
+
+to 
+set text
+type into 
+type secure 
+
+RPA:
+
+
+IGNORE
+ABORT
+CONTINUE- SKIPS CURRETN ITERATION AND RESOLVES UPCOMING ITERATION
+RETRY
+
+
+settings
+contants
+assets
