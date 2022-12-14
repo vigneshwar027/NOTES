@@ -15,9 +15,16 @@ $('#idname').text('new text') - sets the text
 
 changing the attribute
 
+
 $('#idname').attr('href','yahoo.com')
 
 $('a[href]') - refers a tags that has a attr href in it
+
+
+
+ $('a[href=vicky]').css("color","red") -  refers the <a> dom that has href as 'vicky'
+
+ the above is a most powerful way of calling dom since it can cover everthing else
 
 $('a[href]').attr('href') - gets the attribute
 
@@ -37,6 +44,11 @@ this is confusing just use this to understand others code
 other attribute methods:
 
 removeAttr(name_of_attr) 
+
+eg:
+    $('a').removeAttr('href')
+
+
 addClass(classname) - to all matching dom 
 hasClass(classname) - if any one matching dom has then it returns true
 removeClass(classname) - removes class of all matching dom and takes no args
@@ -111,3 +123,49 @@ if u wanna rephrase with > the it's tedious
 $('li > ul > .mid') to choose the same
 
 note: an object in js is equivalent to dictionary in python.
+
+
+calling input type is different from other doms
+
+to get status:
+
+$('input:radio[name=ss]:nth(1)').is(':checked')
+
+to set status:
+$('input:radio:nth(2)').prop('checked',false);
+
+.attr property didint work so .prop
+
+
+similarly for checkboxes
+
+gets the status:
+$('input:checkbox[name=check3]:nth(0)').is(':checked')
+
+$('input:checkbox[name=check3]:nth(0)').is(':checked')
+
+sets the status:
+$('input:checkbox[name=check1]:nth(0)').prop('checked',true);
+
+
+dropdown
+
+set value:
+$('select[id=gender]').val('women')
+
+get value:
+$('select[id=gender]').val()
+
+u can set or get their index too
+
+
+bind and unbind event are deprecated and therefore we are not using it 
+instead we use .on(object/dictionary)
+
+where key is the event and value is the function
+
+.one() is same as .on() but executes the block only once
+
+.event() - gives all details abt the event
+
+

@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    
+    $('input:checkbox').prop('checked',false);
+
+    $('a[id=email]').css("color","red");
 
     $(document).click(function(){
 
