@@ -1,0 +1,13 @@
+.test{
+   color: rgb(9, 106, 191); 
+}
+
+.col{
+    padding-left: 30px;
+    overflow-block: true;
+    
+}
+
+.row{
+    padding-top: 3px;
+}

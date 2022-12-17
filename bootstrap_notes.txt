@@ -1,0 +1,22 @@
+.div.container{
+    
+}
+
+refers a div that is inside a containers
+
+
+col-md
+
+applies to a screen size of medium and above
+
+while using col
+the general syntx is 
+
+col - screen-specs - no of cols
+eg: col-md-3
+
+takes 3 cols for those of screen size of md and above
+
+if screen-size did not matter then that part is avoided
+
+eg: col-3

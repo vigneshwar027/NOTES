@@ -1,3 +1,7 @@
 JQUERY:
 
 input:textarea
+
+this is to check if english hint is 
+
+working there sho
