@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/css/multi-select.css">
+
+    <script src="jquery-3.6.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/js/jquery.multi-select.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select class="website  btn btn-warning btn-flat" id='website' name="states[]" multiple="multiple">
+        <option type="checkbox" value="Vestiaire">Vestiarie</option>
+        <option type="checkbox" value="Lampoo">Lampoo</option>
+        <option type="checkbox" value="RealReal">RealReal</option>
+      </select>	
+</body>
+<script>
+    
+    $(document).ready(function(){
+        $('#website').multiselect({nonselectedtext: 'Website'})
+    })
+</script>
+
+</html>

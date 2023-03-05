@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type = 'text/javascript' src="script.js"></script>
+    <script type = 'text/javascript' src="jquery-3.6.1.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // $(document).ready(function(){
+    //     $('a[class="test_call"]').css('color','red');
+    // }
+
+    // )
+</script>
+<body>
+    <div class="full">
+        
+        <a onch ="as()">dsa</a>
+
+        <a href="#" class="one">this is test class</a><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#" class = 'two' class="test_call">this is test two class</a>
+    </div>
+
+
+    <script>
+        function as(){
+            alert('hiyaa')
+        }
+        $('.full').on('dblclick',function(){
+            $('.one').css('color','red')
+        })
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+mongo db notes:
+
+table = collections
+
+rows = (documents or post)
+
+u dont need to define any schema structure for the collections.. whatver data to push to it .. it will collect and store irrespective of the datatype.
+
+if such columns dont exist , it will create it
+
+if such collections dont exist it will create it..
+
+
+insert syntax
+
+db.collections.insertOne({})
+db.collections.insertMany([{},{}])
+
+db.collections.deleteOne({})
+db.collections.deleteMany([{},{}])
+
+
+
+db.collections.update_one({which doc u have 2 update},{operator:{what cols u have to update}})
+db.collections.update_many({which doc u have 2 update},{operator:{what cols u have to update}})
+
+
+
+unlike other crud operations there is no find_many coz find means find_many
+
+db.collections.find_one({"name":"arun"})
+db.collections.find({"name":"arun"})
+db.collections.find({}) - brings everything
+
+
+The database does not physically exist until you add that collection.
+
+amongo db instance means a mongoconnection
+
+Unlike an SQL table, documents within the same collection can have different structures, resulting in more flexibility than you get with an SQL database.
+
+
+MongoDB automatically assigns data types to the field values when you add a document to a collection. You can override this behavior by using a constructor in the document definition to specify a data type.
+
+mongo iscase sensitive

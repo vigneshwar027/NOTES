@@ -1,0 +1,36 @@
+A SELF DENOTES NOTHING BUT A INSTANCE OF THE CLASS
+
+A SELF KEYWORD IS USED IN A CLASS SO THAT A ARGUMENTS PASSED WHILE INITIATION CAN BE LINKED to the initiated objects
+
+
+a class will define the structure or the logics/operations that will be performed, while a object has the its very values which will be applied on those operations defined in a class
+
+
+to safely retrieve a python dictionary keys
+use 
+
+.get method
+
+person = {"name":"vignesh}
+
+person["gender"] gives error while person.get("gender") returns none
+
+for a split function if no arg is passed , then any numb of space is considered as one delimiter
+
+u can use input() function anywhere in a program just like a variable is used, the code will stop thr for getting the value
+
+eg: print(int(input())*2*5) is valid
+
+
+reagrding pyodbc ingestion:
+
+
+cursor.execute("""use Immilytics_IOP;
+
+insert into dbo.QuestionsResponse(BeneficiaryXref,PurposeOfTravel,IntendedDepartureDate,IntendedReturnDate)
+values(?,?,?,?) """,('BXREF0012','SUMMA','',None))
+
+
+ie. - cursor.execute(sql,values)
+
+this is the right way to use pyodbc abd morover only by this way u can insert null values

@@ -1,0 +1,13 @@
+
+in js function can be called even before it is written
+
+let - variable with block scope
+
+var - var with function scope
+
+no var/let - var with global scope even if it is declared within a function
+
+
+for in -can iterate over objects
+
+for of -cant iterate over objects

@@ -1,0 +1,46 @@
+different ways to refer a dom in css
+
+
+.name_of_class{
+    
+}
+
+#name_of_id{
+
+}
+
+
+dom.name_of_class{
+
+}
+
+dom#name_of_id{
+
+}
+
+clubbing the dom
+.name_of_class,.name_of_otherclass,#name_of_id{
+
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}   
+
+
+div + p {
+  background-color: yellow;
+}
+refer p tag the immediately next to div(immediate next sibling)
+
+
+div ~ p {
+  background-color: yellow;
+} refer all upcoming sibling
+
+
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}refer 1st line of the p tag

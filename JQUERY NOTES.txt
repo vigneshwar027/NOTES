@@ -5,6 +5,12 @@ set and get text
 $('#idname , .classname') -  selects the doms that has this id and dom that has this classname
 this dont act like a filter.. it helps to choose mul dom at a same time
 
+to use filters u simply dont give a space
+
+eg: $('.test_call#two').css('color','red');
+
+selects a dom with a specific id and also with the given specific class
+
 $('#idname > .classname') - selects the dom with this this classname thats placed inside this id name
 
 $('#idname').text() - gets the text
@@ -196,3 +202,17 @@ eg:
 
     but while calling outside it is 
     some_func();
+
+
+you can easily send and get value from dom using .data methods
+
+eg: 
+    <div id="data"></div>
+
+    $('#data').data({"name":'vignesh',"age":45});
+
+    console.log($('#data').data('age'))
+
+    note this wont work if such dom dont exist.
+
+

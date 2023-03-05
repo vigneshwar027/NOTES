@@ -16,3 +16,10 @@ u have 2 put the cond within a brackets
 6. multiple dom in a $() dont need individual quotes
 
 7. .css uses , as separator and not : 
+
+
+8.it is not document.ready(function(){}) but it is $(document).ready(function(){})
+
+
+9.if give any modification to the dom before it is written in the html,it wont apply,
+either u have to apply modification after the dom is written or u use the document.ready function

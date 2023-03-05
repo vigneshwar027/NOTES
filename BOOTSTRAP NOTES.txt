@@ -1,0 +1,15 @@
+important bootstrap classes:
+
+    text-muted - fades text
+    lead - copies parents font format
+    list-unstyled - removed list bullets
+    list-inline - to write list items in x axis
+    list-inline-item - list item which will be in x axis
+	
+	3020
+	4942
+	3040
+	3042
+	4897
+	-1
+	8599

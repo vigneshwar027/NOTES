@@ -39,3 +39,35 @@ spaces
 <p>This is a &ensp; two spaces gap.</p>
 <p>This is a &emsp; four spaces gap.</p>
 
+LOVE PDF CODE
+
+
+def love_pdf(input_files, path):
+
+    public_key = 'project_public_ac0742b921677dca3282dd80a88374ba_umNAm40803ab085e17039c60cb640577709a5'
+
+    # importing the ilovepdf api
+
+    # creating a ILovePdf object
+    ilovepdf = ILovePdf(public_key, verify_ssl=True)
+
+    # assigning a new split tasky
+    task = ilovepdf.new_task('merge')
+
+    # adding the pdf file to the task
+    for file in input_files:
+        task.add_file(file)
+
+    # setting the output folder directory
+    # if no folder exist it will create one
+    task.set_output_folder(path)
+
+    # execute the task
+    task.execute()
+
+    # download the task
+    task.download()
+
+    # delete the task
+    task.delete_current_task()
+
