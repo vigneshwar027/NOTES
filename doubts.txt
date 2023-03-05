@@ -1,7 +1,0 @@
-JQUERY:
-
-input:textarea
-
-
-in mongodowe assign the data typeor it assigns by itself
-
